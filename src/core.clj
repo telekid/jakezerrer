@@ -34,7 +34,7 @@
 
 (def pages
   {"/" home
-   "/about2" about
+   "/about" about
    "/blog/this-life" this-life
    "/blog/something-else" something-else})
 
@@ -48,7 +48,7 @@
               :when (not= dir target-dir)]
         (.delete dir)))))
 
-(defn compile []
+(defn build []
   (doseq [[path page-fn] pages]
     (let [target-path (if (= path "/")
                         "target/html/index.html"
@@ -59,4 +59,4 @@
 
 (defn -main []
   (clean)
-  (compile))
+  (build))
