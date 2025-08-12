@@ -14,7 +14,9 @@
     [:head
      [:style
       [:$
-       (highlight-styles "default")]]
+       (str
+        (highlight-styles "default")
+        "li { line-height: 1.6; }")]]
      [:meta {:charset "UTF-8"}]]
     [:body
      [:<> body]]]))
