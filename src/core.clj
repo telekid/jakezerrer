@@ -1,42 +1,6 @@
 (ns core
-  (:require [borkdude.html :refer [html]]
-            [clojure.java.io :as io]
-            [clojure.string :as str]))
-
-(defn template [body]
-  (html [:html [:head] [:body [:<> body]]]))
-
-(defn home []
-  (template
-   (html
-    [:h1 "home"])))
-
-(defn about []
-  (template
-   (html
-    [:h1 "about"])))
-
-(defn this-life
-  "blog post about this life"
-  []
-  (template
-   (html
-    [:h1 "This life"])))
-
-(defn something-else
-  "blog post about something else"
-  []
-  (template
-   (html
-    [:h1 "Something else"])))
-
-(something-else)
-
-(def pages
-  {"/" home
-   "/about" about
-   "/blog/this-life" this-life
-   "/blog/something-else" something-else})
+  (:require [clojure.java.io :as io]
+            [pages :refer [pages]]))
 
 (defn clean []
   (let [target-dir (io/file "target")]
@@ -49,7 +13,7 @@
         (.delete dir)))))
 
 (defn build []
-  (doseq [[path page-fn] pages]
+  (doseq [[path page-fn] (pages)]
     (let [target-path (if (= path "/")
                         "target/html/index.html"
                         (str "target/html" path "/index.html"))

@@ -1,5 +1,5 @@
 (ns repl
-  (:require [core :refer [-main] :rename {-main build}]
+  (:require [core :refer [-main]]
             [ring.adapter.jetty :as jetty]
             [ring.middleware.file :as file]
             [ring.middleware.content-type :as content-type]
@@ -32,6 +32,9 @@
 
 (defn serve []
   (start))
+
+(defn build []
+  (-main))
 
 (comment
   (restart)
