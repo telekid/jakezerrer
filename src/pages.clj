@@ -1,14 +1,19 @@
 (ns pages
-  (:require [borkdude.html :refer [html]]))
+  (:require [borkdude.html :refer [html]]
+            [highlight :refer [code highlight-clj highlight-styles]]))
 
 (def home-uri "/")
 (def books-2025-uri "/books-2025")
+(def code-example-uri "/code-example")
 
 (defn template [body]
   (html
    [:html
     {:style {:font-family "monospace"}}
     [:head
+     [:style
+      [:$
+       (highlight-styles "default")]]
      [:meta {:charset "UTF-8"}]]
     [:body
      [:<> body]]]))
@@ -46,9 +51,21 @@
       [:li "This Life: Secular Faith and Spiritual Freedom (Martin Hägglund)"]
       [:li "Mating (Normal Rush)"]]])))
 
+(defn code-example []
+  (page
+   (html
+    [:<>
+     [:h1 "Code example"]
+     [:p "This is an example of a post with a code block:"]
+     (code
+      (highlight-clj
+        (println "hello, world!")))
+     [:p "Looks pretty good."]])))
+
 (defn pages []
   {home-uri home
-   books-2025-uri books-2025})
+   books-2025-uri books-2025
+   code-example-uri code-example})
 
 (comment
   (require '[repl :refer [restart build]])
