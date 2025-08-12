@@ -63,11 +63,13 @@
    (html
     [:<>
      [:h1 "Past work"]
+     [:p "I have spent most of my professional life working as a software engineer:"]
      [:ul
       [:li "In 2024, I ran product engineering at Normal Computing"]
       [:li "In the summer of 2023, I traveled and prototyped a devex tool called refuge"]
       [:li "From 2018 to 2023, I worked as a software engineer at Flexport"]
-      [:li "From 2014 to 2017, I worked as a software engineer at a small startup"]]])))
+      [:li "From 2014 to 2017, I worked as a software engineer at a small startup"]]
+     [:p "I had a previous career as a theatrical sound designer in New York City."]])))
 
 (defn code-example []
   (page
