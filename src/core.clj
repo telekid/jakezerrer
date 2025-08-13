@@ -20,7 +20,7 @@
           target-file (io/file target-path)]
       (io/make-parents target-file)
       (spit target-file (str (page-fn)))))
-  (spit (io/file "target/html/404.html") (str (e-404))))
+  (spit (io/file "404.html") (str (e-404))))
 
 (defn -main []
   (clean)
