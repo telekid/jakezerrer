@@ -79,15 +79,23 @@
      [:p "This is an example of a post with a code block:"]
      (code
       (highlight-clj
-        (println "hello, world!")))
+       (println "hello, world!")))
      [:p "Looks pretty good."]])))
+
+(defn e-404 []
+  (page
+   (html
+    [:<>
+     [:h1 "404 Oh, be some other path!"]
+     [:p "What's in a path? That which we call a page"
+      [:br]
+      "by any other path would fail to load"]])))
 
 (defn pages []
   {home-uri home
    books-2025-uri books-2025
    code-example-uri code-example
-   past-work-uri past-work
-   })
+   past-work-uri past-work})
 
 (comment
   (require '[repl :refer [restart build]])

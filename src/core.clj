@@ -1,6 +1,6 @@
 (ns core
   (:require [clojure.java.io :as io]
-            [pages :refer [pages]]))
+            [pages :refer [pages e-404]]))
 
 (defn clean []
   (let [target-dir (io/file "target")]
@@ -19,7 +19,8 @@
                         (str "target/html" path "/index.html"))
           target-file (io/file target-path)]
       (io/make-parents target-file)
-      (spit target-file (str (page-fn))))))
+      (spit target-file (str (page-fn)))))
+  (spit (io/file "target/html/404.html") (str (e-404))))
 
 (defn -main []
   (clean)
