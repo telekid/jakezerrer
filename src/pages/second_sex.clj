@@ -23,8 +23,8 @@ philosophy of women's place in the world. Clearly, much of the injustice and
 inequity diagnosed by de Beauvoir remains stubbornly unchanged. At the same
 time—particularly in our era of increasingly regressive gender politics—I think
 it is important to let " [:em "The Second Sex"] " serve as a marker from which
-we can measure how much feminism has earned women beginning with the dawn of the
-sexual revolution. I fear that many of today's conservative voices are pushing
+we can measure the undeniable and tangible progress won by feminism on behalf
+of women everywhere. I fear that many of today's conservative voices are pushing
 an antifeminist narrative on young women who may find themselves drawn to the
 romance of the tradwife narrative without fully understanding just how much they
 have to lose."]
