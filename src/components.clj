@@ -15,7 +15,8 @@
         "li { line-height: 1.6; }"
         "p { line-height: 1.6; font-family: Palatino; }"
         ".page-body p { max-width: 44em; }"
-        ".page-body blockquote { max-width: 44em; }"
+        ".page-body blockquote { max-width: 44em; margin-left: 2em; }"
+        "hr { border: none; height: 1px; background-color: #ccc; margin: 2em 0; }"
         ".highlight { padding: 1px; padding-left: 6px; }")]]
      [:meta {:charset "UTF-8"}]]
     [:body
@@ -40,11 +41,12 @@
 (defn blockquote [body [from to]]
   (html
    [:figure
-    {:style {:margin-left "0" :margin-bottom "2"}}
+    {:style "margin-left: 0; margin-bottom: 2em"}
     [:blockquote
      body]
     [:figcaption
      (html
-      (if (nil? to)
-        (html [:<> (str "p. " from)])
-        (html [:<> (str "pp. " from "-" to)])))]]))
+      [:em
+       (if (nil? to)
+         (html [:<> (str "p. " from)])
+         (html [:<> (str "pp. " from "-" to)]))])]]))
