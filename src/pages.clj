@@ -24,7 +24,7 @@
          (html
           [:li [:a {:href (str uri)} name]]))
        [[books-2025-uri "Selected reading list, 2025"]
-        [second-sex-uri "The Second Sex: Selected Excerpts"]
+        [second-sex-uri "The Second Sex: Selected excerpts"]
         [past-work-uri "Past work"]])]])))
 
 (defn books-2025

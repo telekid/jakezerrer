@@ -6,24 +6,31 @@
   (page
    (html
     [:<>
-     [:h1 "The Second Sex: Select Excerpts"]
+     [:h1 "The Second Sex: Select excerpts"]
      [:p "One of my goals for 2025 was to finally crack the spine on Simone de
 Beauvoir's " [:em "The Second Sex"] ". Having now achieved that goal, I can say
 that it is without a doubt one of the most transformative books I have ever
 read."  [:p "This page includes various excerpts that spoke to me for one reason
 or another, taken from the 2011 edition translated by Constance Borde and
 Sheila Malovany-Chevallier. (Note: I transcribed these by hand; please shoot me
-a note if you find any errors.)"]]
+an email if you find any errors.)"]]
      [:p "I have decided to publish this snippet of my personal marginalia mostly to
 encourage others to pick up her masterpiece and give it a read. It is a challenging
-book that asks a lot of its reader, but I promise it is worth the effort. As my partner
-pointed out to me, " [:em "The Second Sex"] " can be understood as the first major
-effort to build a comprehensive history and philosophy of women's place in the
-world. Particularly in an era of regressive politics, " [:em "The Second Sex"]
-      " serves as an important reminder of just how oppressive women's condition
-was prior to the sexual revolution. I fear that many of today's conservative
-voices are pushing an antifeminist narrative on young women who may not
-understand just how much they have to lose."]
+book that asks a lot of its reader, but I promise it is worth the effort."]
+     [:p "As my partner pointed out to me, " [:em "The Second Sex"] " can be
+understood as the first major effort to build a comprehensive history and
+philosophy of women's place in the world. Clearly, much of the injustice and
+inequity diagnosed by de Beauvoir remains stubbornly unchanged. At the same
+time—particularly in our era of increasingly regressive gender politics—I think
+it is important to let " [:em "The Second Sex"] " serve as a marker from which
+we can measure how much feminism has earned women beginning with the dawn of the
+sexual revolution. I fear that many of today's conservative voices are pushing
+an antifeminist narrative on young women who may find themselves drawn to the
+romance of the tradwife narrative without fully understanding just how much they
+have to lose."]
+     [:p "I hope you enjoy the excerpts and pick up a copy of the book. I'd love
+to hear from you with any thoughts that you may have. My contact info can be
+found in the footer of this page."]
      [:hr]
      (blockquote
       (html
