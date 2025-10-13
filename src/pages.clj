@@ -1,25 +1,16 @@
 (ns pages
   (:require [borkdude.html :refer [html]]
-            [highlight :refer [code highlight-clj highlight-styles]]))
+            #_
+            [pages.missionary :refer [missionary]]
+            [pages.second-sex :refer [second-sex]]
+            [components :refer [template page]]))
 
 (def home-uri "/")
 (def books-2025-uri "/books-2025")
+(def second-sex-uri "/second-sex-quotes")
 (def past-work-uri "/past-work")
-(def code-example-uri "/code-example")
-
-(defn template [body]
-  (html
-   [:html
-    {:style {:font-family "monospace"}}
-    [:head
-     [:style
-      [:$
-       (str
-        (highlight-styles "default")
-        "li { line-height: 1.6; }")]]
-     [:meta {:charset "UTF-8"}]]
-    [:body
-     [:<> body]]]))
+#_
+(def missionary-uri "/code/missionary")
 
 (defn home []
   (template
@@ -33,14 +24,8 @@
          (html
           [:li [:a {:href (str uri)} name]]))
        [[books-2025-uri "Selected reading list, 2025"]
+        [second-sex-uri "The Second Sex: Selected Excerpts"]
         [past-work-uri "Past work"]])]])))
-
-(defn page [body]
-  (template
-   (html
-    [:<>
-     [:p [:a {:href "/"} "< home"]]
-     body])))
 
 (defn books-2025
   []
@@ -71,17 +56,6 @@
       [:li "From 2014 to 2017, I worked as a software engineer at a small startup"]]
      [:p "I had a previous career as a theatrical sound designer in New York City."]])))
 
-(defn code-example []
-  (page
-   (html
-    [:<>
-     [:h1 "Code example"]
-     [:p "This is an example of a post with a code block:"]
-     (code
-      (highlight-clj
-       (println "hello, world!")))
-     [:p "Looks pretty good."]])))
-
 (defn e-404 []
   (page
    (html
@@ -94,8 +68,10 @@
 (defn pages []
   {home-uri home
    books-2025-uri books-2025
-   code-example-uri code-example
-   past-work-uri past-work})
+   past-work-uri past-work
+   #_#_
+   missionary-uri missionary
+   second-sex-uri second-sex})
 
 (comment
   (require '[repl :refer [restart build]])
