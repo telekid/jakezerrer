@@ -34,6 +34,7 @@
     [:<>
      [:h1 "Selected reading list, 2025"]
      [:ul
+      [:li "The Origins of Totalitarianism (Hannah Arendt)"]
       [:li "The Second Sex (Simone de Beauvior)"]
       [:li "The Places in Between (Rory Stewart)"]
       [:li "Either/Or: A Fragment of Life (Søren Kierkegaard)"]
