@@ -8,7 +8,8 @@
     [:<>
      [:h1 "The Second Sex: Select excerpts"]
      [:p "One of my goals for 2025 was to finally crack the spine on Simone de
-Beauvoir's " [:em "The Second Sex"] ". Having now achieved that goal, I can say
+Beauvoir's " [:em "The Second Sex"] ". I found it extremely challenging but
+absolutely worth the effort, and now, having finished it, I can say
 that it is without a doubt one of the most transformative books I have ever
 read."  [:p "This page includes various excerpts that spoke to me for one reason
 or another, taken from the 2011 edition translated by Constance Borde and
